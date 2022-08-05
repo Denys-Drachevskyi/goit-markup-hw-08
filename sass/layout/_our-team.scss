@@ -1,0 +1,136 @@
+.team {
+    background-color: #F5F4FA;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.team-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-weight: 700;
+        font-size: 28px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.03em;
+    color: var(--title-text-color);
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 700;
+            font-size: 36px;
+            line-height: 1.16;
+            text-align: center;
+            letter-spacing: 0.03em;
+    }
+}
+
+.team-worker {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.team-text {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+/*--------------------НАША КОМАНДА CARD SET--------------*/
+
+.card-list {
+    margin-bottom: -30px;
+    text-align: center;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-bottom: -30px;
+    }
+
+}
+
+.card-item {
+    margin-bottom: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    
+    @media screen and (min-width:768px) {
+        flex-basis: calc((100% - 60px) / 2);
+        margin-left: 30px;
+    }
+        @media screen and (min-width:1200px) {
+            flex-basis: calc((100% - 120px) / 4);
+                
+        }
+}
+
+
+.team-names {
+padding: 30px 24px;
+
+@media screen and (min-width:768px) {
+        padding: 30px 74px 24px 74px;
+    }
+
+    @media screen and (min-width:1200px) {
+    padding: 30px 32px 30px 32px;
+    }
+}
+
+/*--------------------НАША КОМАНДА SOCIAL MEDIA--------------*/
+
+.master-soc-link {
+    width: 44px;
+    height: 44px;
+    background-color: var(--social-media-button);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        &:focus {
+            background-color: var(--acent-color);
+        }
+
+}
+
+.master-soc-link:hover .master-soc-icon,
+.master-soc-link:focus .master-soc-icon, {
+    fill: var(--social-media-button);
+}
+
+
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-soc-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.master-soc-icon {
+    fill: var(--social-media);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

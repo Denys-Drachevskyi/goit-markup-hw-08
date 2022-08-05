@@ -1,0 +1,17 @@
+@import './utils/vars';
+@import './utils/hidden';
+@import './base/reset';
+
+
+@import './layout/hero';
+@import './layout/advantage';
+@import './layout/doing';
+@import './layout/our-team';
+@import './layout/clients';
+@import './layout/portfolio-filters';
+@import './layout/portfolio-cards';
+
+@import './components/footer';
+@import './components/header';
+@import './components/container';
+@import './components/modal-window';
