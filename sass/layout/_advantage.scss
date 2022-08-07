@@ -43,6 +43,10 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--title-text-color);
+    @media screen and (min-width:768px) {
+        text-align: left;
+        
+    }
 }
 
 .advantage-list__text {
